@@ -29,7 +29,7 @@ https://credit-suisse.com/credentials/digital-assets/homium/approve
 ```
 
 ## Issue Credential
-Alice signs a payload that expresses that she is issuing a credential the approve credential to Bob.
+Alice signs a payload that expresses that she is issuing the approve credential to Bob.
 
 This resulting payload is portable, meaning it can be a QR code, email, text download, etc. There are no secrets in it (although there is metadata). 
 
