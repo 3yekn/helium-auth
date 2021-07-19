@@ -1,0 +1,36 @@
+{
+  "@context": [
+    "https://www.w3.org/2018/credentials/v1"
+  ],
+  "id": "https://credit-suisse.com/presentations/digital-assets/homium/approve",
+  "type": [
+    "VerifiablePresentation"
+  ],
+  "verifiableCredential": {
+    "@context": "https://www.w3.org/2018/credentials/v1",
+    "id": "https://credit-suisse.com/credentials/digital-assets/homium/approve",
+    "type": [
+      "VerifiableCredential"
+    ],
+    "credentialSubject": {
+      "id": "did:key:z6Mkrm1PTgDVmwLp87HqNEbwBc392hf87CX4qTsasMvXLutw"
+    },
+    "issuer": "did:key:z6MknWDoGxGY6a6ZbEBpP8n45tBdAGgMTEfBMs6tdKP3oHn5",
+    "issuanceDate": "2021-07-19T21:41:50Z",
+    "proof": {
+      "type": "Ed25519Signature2018",
+      "proofPurpose": "assertionMethod",
+      "verificationMethod": "did:key:z6MknWDoGxGY6a6ZbEBpP8n45tBdAGgMTEfBMs6tdKP3oHn5#z6MknWDoGxGY6a6ZbEBpP8n45tBdAGgMTEfBMs6tdKP3oHn5",
+      "created": "2021-07-19T18:53:04.682Z",
+      "jws": "eyJhbGciOiJFZERTQSIsImNyaXQiOlsiYjY0Il0sImI2NCI6ZmFsc2V9..-p9FRdnebwJd9JODmIt5W41zZCn-f2vVFDuvR8MGbO9cVnHi3iP9GcqfG0YoVsRanG26of0_fJzd1-_M31niCA"
+    }
+  },
+  "proof": {
+    "type": "Ed25519Signature2018",
+    "proofPurpose": "authentication",
+    "verificationMethod": "did:key:z6MknWDoGxGY6a6ZbEBpP8n45tBdAGgMTEfBMs6tdKP3oHn5#z6MknWDoGxGY6a6ZbEBpP8n45tBdAGgMTEfBMs6tdKP3oHn5",
+    "created": "2021-07-19T19:00:24.458Z",
+    "jws": "eyJhbGciOiJFZERTQSIsImNyaXQiOlsiYjY0Il0sImI2NCI6ZmFsc2V9..H9D7oORf4LAkW2HOMfS331XtRscnETdeahI3ARMgflPKdOEDl6nTmtoBNof-79r57GJ824Y_7aGWjjT35xISDw"
+  },
+  "holder": "did:key:z6Mkrm1PTgDVmwLp87HqNEbwBc392hf87CX4qTsasMvXLutw"
+}
