@@ -2,13 +2,13 @@
   "@context": [
     "https://www.w3.org/2018/credentials/v1"
   ],
-  "id": "https://credit-suisse.com/presentations/digital-assets/homium/approve",
+  "id": "https://aswissbank.com/presentations/digital-assets/homium/approve",
   "type": [
     "VerifiablePresentation"
   ],
   "verifiableCredential": {
     "@context": "https://www.w3.org/2018/credentials/v1",
-    "id": "https://credit-suisse.com/credentials/digital-assets/homium/approve",
+    "id": "https://aswissbank.com/credentials/digital-assets/homium/approve",
     "type": [
       "VerifiableCredential"
     ],

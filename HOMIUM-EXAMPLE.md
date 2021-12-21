@@ -37,7 +37,7 @@ Use the ```homium-owner``` DID as the issuer and the ```homium-approver``` as th
 ``` json
 {
     "@context": "https://www.w3.org/2018/credentials/v1",
-    "id": "https://credit-suisse.com/credentials/digital-assets/homium/approve",
+    "id": "https://aswissbank.com/credentials/digital-assets/homium/approve",
     "type": ["VerifiableCredential"],
     "issuer": "did:key:z6Mkqrhc4U3LY47D88j8KYhXRY5eWgipTipmX6arXecykfpL",
     "issuanceDate": "2021-07-19T21:41:50Z",
@@ -62,7 +62,7 @@ curl -fsS $didkit_url/issue/credentials \
     -d '{
     "credential": {
         "@context": "https://www.w3.org/2018/credentials/v1",
-        "id": "https://credit-suisse.com/credentials/digital-assets/homium/approve",
+        "id": "https://aswissbank.com/credentials/digital-assets/homium/approve",
         "type": ["VerifiableCredential"],
         "issuer": "did:key:z6Mkqrhc4U3LY47D88j8KYhXRY5eWgipTipmX6arXecykfpL",
         "issuanceDate": "2021-07-19T21:41:50Z",
@@ -82,7 +82,7 @@ The proof, and in particular, the ```jws``` (JSON Web Signature), can ONLY be ge
 ``` json
 {
   "@context": "https://www.w3.org/2018/credentials/v1",
-  "id": "https://credit-suisse.com/credentials/digital-assets/homium/approve",
+  "id": "https://aswissbank.com/credentials/digital-assets/homium/approve",
   "type": [
     "VerifiableCredential"
   ],
@@ -117,12 +117,12 @@ The specific presentation of a credential...
 ``` json
 {
   "@context": ["https://www.w3.org/2018/credentials/v1"],
-  "id": "https://credit-suisse.com/presentations/digital-assets/homium/approve",
+  "id": "https://aswissbank.com/presentations/digital-assets/homium/approve",
   "type": ["VerifiablePresentation"],
   "holder": "did:key:z6Mkh4Q8sq4kj9dUAK63j4vXfM2AMmvkz1qqGbNxXqBfHiez",
   "verifiableCredential": {
     "@context": "https://www.w3.org/2018/credentials/v1",
-    "id": "https://credit-suisse.com/credentials/digital-assets/homium/approve",
+    "id": "https://aswissbank.com/credentials/digital-assets/homium/approve",
     "type": ["VerifiableCredential"],
     "credentialSubject": {
       "id": "did:key:z6Mkh4Q8sq4kj9dUAK63j4vXfM2AMmvkz1qqGbNxXqBfHiez"
@@ -148,12 +148,12 @@ The specific presentation of a credential...
     -d '{
   "presentation": {
     "@context": ["https://www.w3.org/2018/credentials/v1"],
-    "id": "https://credit-suisse.com/presentations/digital-assets/homium/approve",
+    "id": "https://aswissbank.com/presentations/digital-assets/homium/approve",
     "type": ["VerifiablePresentation"],
     "holder": "did:key:z6Mkh4Q8sq4kj9dUAK63j4vXfM2AMmvkz1qqGbNxXqBfHiez",
     "verifiableCredential": {
       "@context": "https://www.w3.org/2018/credentials/v1",
-      "id": "https://credit-suisse.com/credentials/digital-assets/homium/approve",
+      "id": "https://aswissbank.com/credentials/digital-assets/homium/approve",
       "type": ["VerifiableCredential"],
       "credentialSubject": {
         "id": "did:key:z6Mkh4Q8sq4kj9dUAK63j4vXfM2AMmvkz1qqGbNxXqBfHiez"

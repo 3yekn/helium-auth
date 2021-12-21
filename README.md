@@ -20,12 +20,12 @@ The only secrets exist on the user's devices.
 Once identities are created, users can issue credentials.
 
 Example:
-- User alice@credit-suisse.com is the overall owner of the Homium asset.
-- Alice grants bob@credit-suisse.com the authority to approve new Homium deals.
+- User alice@aswissbank.com is the overall owner of the Homium asset.
+- Alice grants bob@aswissbank.com the authority to approve new Homium deals.
 
 This credential may have a namespace perhaps like this:
 ```
-https://credit-suisse.com/credentials/digital-assets/homium/approve
+https://aswissbank.com/credentials/digital-assets/homium/approve
 ```
 
 ## Issue Credential
@@ -71,7 +71,7 @@ Use the ```homium-owner``` DID as the issuer and the ```homium-approver``` as th
 ``` json
 {
     "@context": "https://www.w3.org/2018/credentials/v1",
-    "id": "https://credit-suisse.com/credentials/digital-assets/homium/approve",
+    "id": "https://aswissbank.com/credentials/digital-assets/homium/approve",
     "type": ["VerifiableCredential"],
     "issuer": "did:key:z6MknWDoGxGY6a6ZbEBpP8n45tBdAGgMTEfBMs6tdKP3oHn5",
     "issuanceDate": "2021-07-19T21:41:50Z",
@@ -96,7 +96,7 @@ curl -fsS $didkit_url/issue/credentials \
     -d '{
     "credential": {
         "@context": "https://www.w3.org/2018/credentials/v1",
-        "id": "https://credit-suisse.com/credentials/digital-assets/homium/approve",
+        "id": "https://aswissbank.com/credentials/digital-assets/homium/approve",
         "type": ["VerifiableCredential"],
         "issuer": "did:key:z6MknWDoGxGY6a6ZbEBpP8n45tBdAGgMTEfBMs6tdKP3oHn5",
         "issuanceDate": "2021-07-19T21:41:50Z",
@@ -116,7 +116,7 @@ The proof, and in particular, the ```jws``` (JSON Web Signature), can ONLY be ge
 ``` json
 {
   "@context": "https://www.w3.org/2018/credentials/v1",
-  "id": "https://credit-suisse.com/credentials/digital-assets/homium/approve",
+  "id": "https://aswissbank.com/credentials/digital-assets/homium/approve",
   "type": ["VerifiableCredential"],
   "credentialSubject": {
     "id": "did:key:z6Mkrm1PTgDVmwLp87HqNEbwBc392hf87CX4qTsasMvXLutw"
@@ -150,12 +150,12 @@ The specific presentation of a credential...
 ``` json
 {
   "@context": ["https://www.w3.org/2018/credentials/v1"],
-  "id": "https://credit-suisse.com/presentations/digital-assets/homium/approve",
+  "id": "https://aswissbank.com/presentations/digital-assets/homium/approve",
   "type": ["VerifiablePresentation"],
   "holder": "did:key:z6Mkh4Q8sq4kj9dUAK63j4vXfM2AMmvkz1qqGbNxXqBfHiez",
   "verifiableCredential": {
     "@context": "https://www.w3.org/2018/credentials/v1",
-    "id": "https://credit-suisse.com/credentials/digital-assets/homium/approve",
+    "id": "https://aswissbank.com/credentials/digital-assets/homium/approve",
     "type": ["VerifiableCredential"],
     "credentialSubject": {
         "id": "did:key:z6Mkrm1PTgDVmwLp87HqNEbwBc392hf87CX4qTsasMvXLutw"
@@ -181,12 +181,12 @@ The specific presentation of a credential...
     -d '{
   "presentation": {
     "@context": ["https://www.w3.org/2018/credentials/v1"],
-    "id": "https://credit-suisse.com/presentations/digital-assets/homium/approve",
+    "id": "https://aswissbank.com/presentations/digital-assets/homium/approve",
     "type": ["VerifiablePresentation"],
     "holder": "did:key:z6Mkrm1PTgDVmwLp87HqNEbwBc392hf87CX4qTsasMvXLutw",
     "verifiableCredential": {
         "@context": "https://www.w3.org/2018/credentials/v1",
-        "id": "https://credit-suisse.com/credentials/digital-assets/homium/approve",
+        "id": "https://aswissbank.com/credentials/digital-assets/homium/approve",
         "type": ["VerifiableCredential"],
         "credentialSubject": {
             "id": "did:key:z6Mkrm1PTgDVmwLp87HqNEbwBc392hf87CX4qTsasMvXLutw"
@@ -215,11 +215,11 @@ This payload has the cryptographic proof that Bob is Bob and he has the authorit
 ``` json
 {
   "@context": ["https://www.w3.org/2018/credentials/v1"],
-  "id": "https://credit-suisse.com/presentations/digital-assets/homium/approve",
+  "id": "https://aswissbank.com/presentations/digital-assets/homium/approve",
   "type": ["VerifiablePresentation"],
   "verifiableCredential": {
     "@context": "https://www.w3.org/2018/credentials/v1",
-    "id": "https://credit-suisse.com/credentials/digital-assets/homium/approve",
+    "id": "https://aswissbank.com/credentials/digital-assets/homium/approve",
     "type": ["VerifiableCredential"],
     "credentialSubject": {
       "id": "did:key:z6Mkh4Q8sq4kj9dUAK63j4vXfM2AMmvkz1qqGbNxXqBfHiez"
@@ -245,3 +245,4 @@ This payload has the cryptographic proof that Bob is Bob and he has the authorit
 }
 ```
 
+https://github.com/KILTprotocol/demo-mobile-wallet/blob/master/docs/Demo%20Flow.md
